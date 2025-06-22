@@ -3,9 +3,10 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const DataBase = require('./config/db');
-const { Item } = require('./modal/addItems');
-const env =  require('dotenv').config()
+const DataBase = require('../config/db');
+const { Item } = require('../modal/addItems');
+const env = require('dotenv').config()
+const serverless = require('serverless-http');
 
 const app = express();
 
